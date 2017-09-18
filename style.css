@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background-image: url(./Images/_1080266.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #2280c4;
+}
