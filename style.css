@@ -1,3 +1,9 @@
+/* Import google fonts here */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Universal selector */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,11 +12,9 @@
 }
 
 html {
-  background-image: url(./Images/_1080266.jpg);
+  background: url("./images/_1080266.jpg") no-repeat, top;
   background-attachment: fixed;
-  background-position: top;
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 h1 {
