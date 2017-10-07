@@ -1,24 +1,201 @@
-/* Imported Google Fonts */
-
+/*** Imported Google Fonts ***/
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:400,700');
 
-/* @MediaQueries */
+/***
+Color Palette - Lunar Eclipse & Astronomy 101
+#3e3a3a
+#b9adad
+#ded4d4
+#731c1c
+#000000
+#154f90
+#bbd7f6
+#ffffff
+#d0d0d0
+#fff2b9
+***/
 
-/* Reset Box-Model */
+/*** Media Queries ***/
 
-html {
+/*** Universal Selector ***/
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
+}
+
+/*** Global Styling ***/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+  color: #fff;
 }
 
 body {
-  background: url("./images/_1080266.jpg") no-repeat, top;
+  background-image: url(images/pics/_1080158.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+}
+
+/*** Header Styling on Home Page ***/
+.header {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
 }
 
 h1 {
-  color: #17e31f;
-  margin-left: 50px;
+  font-size: 16rem;
+  font-weight: 400;
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+/*** Navigation Styling across Site ***/
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar img {
+  height: 4.5rem;
+  vertical-align: middle;
+  margin: 0 -2rem;
+}
+
+.navbar li {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+/*** .stick class added to navbar by JQuery ***/
+.stick {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.clear {
+  width: 100%;
+  height: 4.5rem;
+  margin-top: -4.5rem;
+}
+
+/*** Content Styling ***/
+.content {
+  width: 100%;
+  height: 80rem;
+  background-color: #3e3a3a;
+  position: relative;
+  display: inline-block;
+  margin: 5rem 0;
+  opacity: 0.9;
+}
+
+/*** Footer Styling ***/
+.footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  top: 10%;
+}
+
+.footer span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #b9adad;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer img {
+  height: 4.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+/*** Social Media Styling ***/
+.social {
+  text-align: center;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.social img {
+  position: relative;
+  display: inline-block;
+  filter: brightness(50%);
+  opacity: 0.9;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#facebook {
+  width: auto;
+  height: 2.5rem;
+}
+
+#instagram {
+  width: auto;
+  height: 3.5rem;
+}
+
+#twitter {
+  width: auto;
+  height: 2.5rem;
+}
+
+#youtube {
+  width: auto;
+  height: 4.5rem;
+}
+
+#spotify {
+  width: auto;
+  height: 2.5rem;
+}
+
+#itunes {
+  width: auto;
+  height: 2.5rem;
+}
+
+#soundcloud {
+  width: auto;
+  height: 3.5rem;
+}
+
+#musicglue {
+  width: auto;
+  height: 3rem;
 }
