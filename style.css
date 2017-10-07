@@ -22,7 +22,6 @@ Color Palette - Lunar Eclipse & Astronomy 101
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 0;
 }
 
 /*** Global Styling ***/
@@ -31,20 +30,31 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Karla', sans-serif;
+  background-color: #000;
   color: #fff;
 }
 
-body {
-  background-image: url(images/pics/_1080158.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-color: #000;
+/*** Home Page Styling ***/
+#home {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-/*** Header Styling on Home Page ***/
-.header {
+#home img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.main {
   width: 100%;
   height: 100%;
   line-height: 100%;
@@ -54,7 +64,7 @@ body {
 }
 
 h1 {
-  font-size: 16rem;
+  font-size: 12rem;
   font-weight: 400;
   display: table-cell;
   position: relative;
@@ -66,29 +76,40 @@ h1 {
   width: 100%;
   height: auto;
   background-color: #000;
-  display: inline-block;
+  position: absolute;
+  left: 0;
   text-align: center;
 }
 
 .navbar img {
   height: 4.5rem;
   vertical-align: middle;
-  margin: 0 -2rem;
+  margin: 0 -4rem;
+}
+
+.navbar img:hover {
+  filter: brightness(50%);
 }
 
 .navbar li {
   display: inline-block;
   vertical-align: middle;
   width: auto;
-  margin: 0 1.5rem;
+  margin: 0 4%;
   font-size: 1.5rem;
-  letter-spacing: 0.5rem;
+  color: #fff;
+}
+
+.navbar li:hover {
+  color: #154f90;
+  filter: brightness(80%);
 }
 
 /*** .stick class added to navbar by JQuery ***/
 .stick {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
 }
 
@@ -98,7 +119,7 @@ h1 {
   margin-top: -4.5rem;
 }
 
-/*** Content Styling ***/
+/*** Content Styling across Site ***/
 .content {
   width: 100%;
   height: 80rem;
@@ -109,7 +130,7 @@ h1 {
   opacity: 0.9;
 }
 
-/*** Footer Styling ***/
+/*** Footer Styling across Site ***/
 .footer {
   width: 100%;
   height: 10rem;
@@ -128,7 +149,7 @@ h1 {
 .footer span {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 1rem;
   color: #b9adad;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
@@ -137,12 +158,17 @@ h1 {
 .footer img {
   height: 4.5rem;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   margin-bottom: 0.5rem;
+  margin-left: -2rem;
 }
 
-/*** Social Media Styling ***/
+.footer img:hover {
+  filter: brightness(50%);
+}
+
+/*** Social Media Styling across Site ***/
 .social {
   text-align: center;
   display: table;
@@ -160,39 +186,52 @@ h1 {
   margin: 0;
 }
 
+.social img:hover {
+  filter: brightness(100%);
+}
+
+/*** Icon Styling across Site ***/
+
 #facebook {
   width: auto;
   height: 2.5rem;
+  margin-right: 1%;
 }
 
 #instagram {
   width: auto;
   height: 3.5rem;
+  margin-right: 1%;
 }
 
 #twitter {
   width: auto;
   height: 2.5rem;
+  margin-right: 1%;
 }
 
 #youtube {
   width: auto;
   height: 4.5rem;
+  margin: -1% -1%;
 }
 
 #spotify {
   width: auto;
   height: 2.5rem;
+  margin-right: 1%;
 }
 
 #itunes {
   width: auto;
-  height: 2.5rem;
+  height: 3rem;
+  margin-right: 1.5%;
 }
 
 #soundcloud {
   width: auto;
-  height: 3.5rem;
+  height: 4rem;
+  margin-right: 1%;
 }
 
 #musicglue {
