@@ -287,7 +287,7 @@ body {
 /*** Home Page Content Styling ***/
 .content {
   width: 94%;
-  height: 200%;
+  height: 190%;
   background-color: rgba(62, 58, 58, 0.9);
   position: relative;
   display: inline-block;
@@ -308,6 +308,59 @@ body {
   opacity: 0.2;
 }
 
+.content h1 {
+  font-size: 250%;
+  width: 50%;
+  top: 15%;
+  position: absolute;
+  left: 5%;
+}
+
+.content h2 {
+  position: absolute;
+  font-size: 200%;
+  top: 25%;
+  left: 11%;
+  color: #bbd7f6;
+}
+
+.content h3 {
+  font-size: 250%;
+  margin: 2% 0;
+  color: #fff2b9;
+}
+
+.content span {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  font-size: 110%;
+  color: #b9adad;
+  left: 2%;
+  top: 5%;
+  letter-spacing: 0.1rem;
+}
+
+.content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 170%;
+  position: absolute;
+  width: 35%;
+  right: 5%;
+  top: 30%;
+  letter-spacing: 0.1rem;
+}
+
+.content p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.content p a:hover {
+  font-style: italic;
+  color: #154f90;
+}
+
 #youtube-player {
   width: 65%;
   height: 30%;
@@ -315,7 +368,6 @@ body {
   display: inline-block;
   border: 0.5rem solid #000;
   border-radius: 1.5%;
-  margin-top: 13%;
   font-size: 0;
 }
 
@@ -389,6 +441,69 @@ body {
   padding: 2%;
   top: 25%;
   left: 2%;
+}
+
+/*** Listings page content styling ***/
+.listings-content {
+  width: 94%;
+  min-height: 50%;
+  height: auto;
+  background-color: rgba(62, 58, 58, 0.9);
+  position: relative;
+  display: inline-block;
+  margin: 10% 3% 5%;
+  text-align: center;
+  box-shadow: -5px -5px 5px #000;
+  overflow: hidden;
+  padding: 4%;
+}
+
+.listings-content #spotify-player {
+  height: auto;
+  width: auto;
+  position: absolute;
+  border-radius: 1.5%;
+  top: 5%;
+  right: 3%;
+  border: 0.5rem solid #000;
+  font-size: 0;
+}
+
+.listings-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.listings-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  width: 66%;
+  height: auto;
+  padding: 2%;
+  top: 30%;
+  left: 2%;
+}
+
+#ep-cover {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /*** Footer Styling across Site ***/
