@@ -47,62 +47,77 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  filter: brightness(80%);
 }
 
 .main {
   width: 100%;
   height: 100%;
-  line-height: 100%;
-  display: table;
-  position: relative;
-  text-align: center;
 }
 
-h1 {
-  font-size: 12rem;
-  font-weight: 400;
-  display: table-cell;
-  position: relative;
-  vertical-align: middle;
+.main img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 /*** Navigation Styling across Site ***/
-.navbar {
+.clear {
   width: 100%;
   height: auto;
-  background-color: #000;
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
   position: absolute;
-  left: 0;
+  background-color: #000;
+  border-bottom: 0.3rem solid #fff;
+  overflow: hidden;
   text-align: center;
 }
 
-.navbar img {
-  height: 4.5rem;
-  vertical-align: middle;
-  margin: 0 -4rem;
-}
-
-.navbar img:hover {
-  filter: brightness(50%);
+.navbar ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar li {
-  display: inline-block;
+  display: table-cell;
+  position: relative;
   vertical-align: middle;
-  width: auto;
-  margin: 0 4%;
-  font-size: 1.5rem;
+  font-size: 150%;
   color: #fff;
+  overflow: hidden;
 }
 
-.navbar li:hover {
-  color: #154f90;
-  filter: brightness(80%);
+.navbar img {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  height: 7%;
+  margin: 0 auto -5%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  filter: brightness(30%);
 }
 
 /*** .stick class added to navbar by JQuery ***/
@@ -113,59 +128,96 @@ h1 {
   z-index: 999;
 }
 
-.clear {
-  width: 100%;
-  height: 4.5rem;
-  margin-top: -4.5rem;
-}
-
 /*** Content Styling across Site ***/
 .content {
-  width: 100%;
-  height: 80rem;
-  background-color: #3e3a3a;
+  width: auto;
+  height: 200%;
+  background-color: rgba(62, 58, 58, 0.9);
   position: relative;
   display: inline-block;
-  margin: 5rem 0;
-  opacity: 0.9;
+  margin: 10% 3% 5%;
+  text-align: center;
+  box-shadow: -5px -5px 5px #000;
+}
+
+.content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.2;
+}
+
+#youtube-player {
+  width: 65%;
+  height: 30%;
+  position: relative;
+  display: inline-block;
+  border: 0.5rem solid #000;
+  margin-top: 13%;
+  font-size: 0;
+}
+
+#promo-video {
+  width: 50%;
+  height: auto;
+  border: 0.5rem solid #000;
+  position: relative;
+  margin-left: 4%;
+  margin-top: 32%;
+  font-size: 0;
+}
+
+#spotify-player {
+  height: 22%;
+  width: 20%;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  border: 0.5rem solid #000;
+  font-size: 0;
 }
 
 /*** Footer Styling across Site ***/
 .footer {
   width: 100%;
-  height: 10rem;
-  background-color: #000;
+  height: 20%;
+  background-color: #fff;
   text-align: center;
   position: relative;
+  border-top: 0.5rem solid #000;
 }
 
 .footer p {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
+  font-size: 180%;
+  font-weight: 700;
   position: relative;
+  color: #000;
   top: 10%;
+  margin-bottom: 1%;
 }
 
 .footer span {
   position: absolute;
-  bottom: 0;
-  right: 1rem;
-  color: #b9adad;
+  bottom: 1%;
+  right: 1%;
+  color: #3e3a3a;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .footer img {
-  height: 4.5rem;
+  width: 22%;
+  height: auto;
   position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-bottom: 0.5rem;
-  margin-left: -2rem;
+  left: 2%;
+  bottom: 12%;
 }
 
 .footer img:hover {
-  filter: brightness(50%);
+  filter: contrast(40%);
 }
 
 /*** Social Media Styling across Site ***/
