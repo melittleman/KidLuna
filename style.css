@@ -71,6 +71,147 @@ body {
   margin: auto;
 }
 
+/*** About Page Styling ***/
+#about {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#about img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Blog Page Styling ***/
+#blog {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#blog img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Contact Page Styling ***/
+#contact {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#contact img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Gallery Page Styling ***/
+#gallery {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#gallery img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Listings Page Styling ***/
+#listings {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#listings img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Shop Page Styling ***/
+#shop {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#shop img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(80%);
+}
+
+/*** Header styling across site ***/
+.header {
+  width: 100%;
+  height: 18%;
+  text-align: center;
+}
+
+.header h1 {
+  position: relative;
+  font-size: 600%;
+  top: 8%;
+  margin: auto;
+  letter-spacing: 1.5rem;
+}
+
 /*** Navigation Styling across Site ***/
 .clear {
   width: 100%;
@@ -83,6 +224,7 @@ body {
   position: absolute;
   background-color: #000;
   border-bottom: 0.3rem solid #fff;
+  border-top: 0.1rem solid #3e3a3a;
   overflow: hidden;
   text-align: center;
 }
@@ -92,6 +234,7 @@ body {
   table-layout: fixed;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .navbar li {
@@ -101,6 +244,7 @@ body {
   font-size: 150%;
   color: #fff;
   overflow: hidden;
+  letter-spacing: 0.4rem;
 }
 
 .navbar img {
@@ -109,6 +253,14 @@ body {
   vertical-align: middle;
   height: 7%;
   margin: 0 auto -5%;
+}
+
+.navbar img:hover {
+  filter: brightness(30%);
+}
+
+.navbar img:active {
+  filter: brightness(80%);
 }
 
 .navbar a {
@@ -120,6 +272,10 @@ body {
   filter: brightness(30%);
 }
 
+.navbar a:active {
+  filter: brightness(80%);
+}
+
 /*** .stick class added to navbar by JQuery ***/
 .stick {
   position: fixed;
@@ -128,9 +284,9 @@ body {
   z-index: 999;
 }
 
-/*** Content Styling across Site ***/
+/*** Home Page Content Styling ***/
 .content {
-  width: auto;
+  width: 94%;
   height: 200%;
   background-color: rgba(62, 58, 58, 0.9);
   position: relative;
@@ -147,6 +303,8 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
+  width: 100%;
+  height: auto;
   opacity: 0.2;
 }
 
@@ -156,6 +314,7 @@ body {
   position: relative;
   display: inline-block;
   border: 0.5rem solid #000;
+  border-radius: 1.5%;
   margin-top: 13%;
   font-size: 0;
 }
@@ -164,6 +323,7 @@ body {
   width: 50%;
   height: auto;
   border: 0.5rem solid #000;
+  border-radius: 1.5%;
   position: relative;
   margin-left: 4%;
   margin-top: 32%;
@@ -171,13 +331,64 @@ body {
 }
 
 #spotify-player {
-  height: 22%;
-  width: 20%;
+  height: auto;
+  width: auto;
   position: absolute;
-  top: 3%;
+  border-radius: 1.5%;
+  top: 4%;
   right: 4%;
   border: 0.5rem solid #000;
   font-size: 0;
+}
+
+/*** About page content styling ***/
+.about-content {
+  width: 94%;
+  height: auto;
+  background-color: rgba(62, 58, 58, 0.9);
+  position: relative;
+  display: inline-block;
+  margin: 10% 3% 5%;
+  text-align: center;
+  box-shadow: -5px -5px 5px #000;
+  overflow: hidden;
+  padding: 4%;
+}
+
+.about-content #spotify-player {
+  height: auto;
+  width: auto;
+  position: absolute;
+  border-radius: 1.5%;
+  top: 25%;
+  right: 3%;
+  border: 0.5rem solid #000;
+  font-size: 0;
+}
+
+.about-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.about-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+  position: relative;
+  width: 66%;
+  height: auto;
+  padding: 2%;
+  top: 25%;
+  left: 2%;
 }
 
 /*** Footer Styling across Site ***/
@@ -204,8 +415,9 @@ body {
   bottom: 1%;
   right: 1%;
   color: #3e3a3a;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5%;
+  font-weight: 700;
+  font-size: 90%;
 }
 
 .footer img {
@@ -217,76 +429,80 @@ body {
 }
 
 .footer img:hover {
-  filter: contrast(40%);
+  filter: invert(40%);
+  width: 23%;
+}
+
+.footer img:active {
+  filter: invert(20%);
 }
 
 /*** Social Media Styling across Site ***/
-.social {
-  text-align: center;
-  display: table;
+#social {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-.social img {
-  position: relative;
-  display: inline-block;
-  filter: brightness(50%);
-  opacity: 0.9;
-  vertical-align: middle;
-  margin: 0;
+#social ul {
+  text-align: center;
 }
 
-.social img:hover {
-  filter: brightness(100%);
+#social li {
+  display: inline;
+}
+
+#social img {
+  position: relative;
+  vertical-align: middle;
+  margin: 0 0.5%;
+}
+
+#social img:hover {
+  filter: invert(40%);
+}
+
+#social img:active {
+  filter: invert(20%);
 }
 
 /*** Icon Styling across Site ***/
-
 #facebook {
-  width: auto;
-  height: 2.5rem;
-  margin-right: 1%;
+  width: 4%;
+  height: auto;
 }
 
 #instagram {
-  width: auto;
-  height: 3.5rem;
-  margin-right: 1%;
+  width: 4.5%;
+  height: auto;
 }
 
 #twitter {
-  width: auto;
-  height: 2.5rem;
-  margin-right: 1%;
+  width: 4%;
+  height: auto;
 }
 
 #youtube {
-  width: auto;
-  height: 4.5rem;
-  margin: -1% -1%;
+  width: 4.5%;
+  height: auto;
 }
 
 #spotify {
-  width: auto;
-  height: 2.5rem;
-  margin-right: 1%;
+  width: 4%;
+  height: auto;
 }
 
 #itunes {
-  width: auto;
-  height: 3rem;
-  margin-right: 1.5%;
+  width: 4%;
+  height: auto;
 }
 
 #soundcloud {
-  width: auto;
-  height: 4rem;
-  margin-right: 1%;
+  width: 5%;
+  height: auto;
 }
 
 #musicglue {
-  width: auto;
-  height: 3rem;
+  width: 8%;
+  height: auto;
 }
